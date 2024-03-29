@@ -1,12 +1,12 @@
 {% load static tailwind_cli django_htmx %}
 <!DOCTYPE html>
 <html lang="en">
-<meta name="description" content="Mental Reload App">
-<meta name="keywords" content="mental reload app">
+<meta name="description" content="Django Project">
+<meta name="keywords" content="django app">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% block page_title %}<title>Document</title>{% endblock page_title %}
     {% tailwind_css %}
     <script src="{% static 'js/htmx.min.js' %}" defer></script>
     {% django_htmx_script %}
